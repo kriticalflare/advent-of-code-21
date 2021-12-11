@@ -1,5 +1,7 @@
 fun main() {
 
+    data class Cell(var value: Int, var marked: Boolean)
+
     fun cleanInput(input: List<String>): List<String> {
         val cInp = input.toMutableList()
         cInp.removeAt(0)
@@ -141,5 +143,3 @@ fun main() {
     println(part2(input))
 
 }
-
-data class Cell(var value: Int, var marked: Boolean)

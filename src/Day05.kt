@@ -1,6 +1,9 @@
 import  kotlin.math.*;
 
 fun main() {
+
+    data class Coord(var x: Int, var y: Int)
+
     fun parseInput(rawInput: List<String>): List<Pair<Coord, Coord>> {
         val pInp = rawInput.toMutableList()
 
@@ -149,5 +152,3 @@ fun main() {
     println(part1(input))
     println(part2(input))
 }
-
-data class Coord(var x: Int, var y: Int)

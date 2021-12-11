@@ -1,6 +1,7 @@
 import java.util.*
 
 fun main() {
+    data class Point(val x: Int, val y: Int, val value: Int)
 
     fun constructGrid(input: List<String>): Array<IntArray> {
         val grid = Array(input.size) { IntArray(input[0].length) }
@@ -90,6 +91,8 @@ fun main() {
     val input = readInput(
         "Day09"
     )
+
+
     val testInput = readInput("Day09test")
     check(part1(testInput) == 15)
     println(part1(input))
@@ -97,4 +100,3 @@ fun main() {
     println(part2(input))
 }
 
-data class Point(val x: Int, val y: Int, val value: Int)
