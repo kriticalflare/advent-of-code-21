@@ -64,7 +64,7 @@ fun main() {
 
 
     fun dfsPart2(
-        nodes: java.util.HashMap<String, Int>, visitedCount: IntArray, graph: ArrayList<ArrayList<Node>>, root: String
+        nodes: HashMap<String, Int>, visitedCount: IntArray, graph: ArrayList<ArrayList<Node>>, root: String
     ): Int {
         var paths = 0
         if (root == "end") {
